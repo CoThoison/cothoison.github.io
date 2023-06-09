@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="styles.css"/>
+	<title>Portfolio</title>
+
 </head>
+
 <body>
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+	<div class="background">
+
+		<!--Barre de navigation-->
+		<nav class="navbar">
+			<ul class="nav-links">
+				<li class="navbar_accueil current">
+					<a href="index.html">Welcome</a>
+				</li>
+				<li class="navbar_etudes">
+					<a href="etudes.html">Studies</a>
+				</li>
+				<li class="navbar_experiences">
+					<a href="experiences.html">Experiences</a>
+				</li>
+				<li  class="navbar_projets">
+					<a href="projets.html">Projects</a>
+				</li>
+				<li class="navbar_contacts">
+					<a href="contacts.html">Contacts</a>
+				</li>
+			</ul>
+			<img src="img/menu-btn.png" alt="menu hamburger" class="menuHamburger"/>
+		</nav>
+
+		<div class="presentation">
+			<p class="hello">
+				Hello !
+			</p>
+	
+			<!--Contenu-->
+			<h1>
+				I am Corentin THOISON
+				<br>
+				student at ENSEEIHT in Toulouse
+			</h1>
+		</div>
+
+		<script>
+			const menuHamburger = document.querySelector(".menuHamburger")
+			const navLinks = document.querySelector(".nav-links")
+	 
+			menuHamburger.addEventListener('click',()=>{
+			navLinks.classList.toggle('mobile-menu')
+			})
+		</script>
+
+	</div>
+
 </body>
+
 </html>

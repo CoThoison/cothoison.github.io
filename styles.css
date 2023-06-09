@@ -1,9 +1,129 @@
-body {
-  background-color: powderblue;
+/*Definition des polices d'écritudes*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-h1 {
-  color: blue;
+
+.nav, h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-p {
-  color: red;
+
+/*Mise en place de la barre de navigation*/
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0.25vh 0.25sw;
+    padding: 0;
+}
+
+.navbar ul li{
+    display: inline;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 4vh;
+    text-align: center;
+    padding: 0.5vh 1.5vw;
+}
+
+.navbar ul li a:hover{
+    border-bottom: solid 1.5px black;
+}
+
+.navbar ul li.current a{
+    border-bottom: solid 1.5px black;
+}
+/*Gestion des couleurs de la barre de navigation sur Accueil*/
+.background .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0.5vw 1.5vw;
+}
+
+.background .navbar ul li a:hover{
+    border-bottom: solid 1.5px white;
+}
+
+.background .navbar ul li.current a{
+    border-bottom: solid 1.5px white;
+}
+
+.menuHamburger{
+    color: black;
+}
+
+/*Image de fond sur accueil*/
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1.2;
+    color: white;
+}
+
+.presentation{
+    margin-top: 30vh;
+    margin-left: 10vw;
+}
+
+.navbar .menuHamburger{
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    width: 7vw;
+    display: none;
+}
+
+/*Affichage téléphone*/
+@media screen and (max-width: 800px){
+
+    .navbar ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(7px);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -200vw;
+    }
+
+    .nav-links{
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu{
+        margin-right: 0;
+    
+    }
+
+    .navbar .menuHamburger{
+        display: block;
+    }
+
+    .navbar ul li{
+        margin: 1.5vh 0;
+    }
+
 }
