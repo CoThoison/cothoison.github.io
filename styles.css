@@ -106,7 +106,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: -200vw;
+        margin-right: -200%;
     }
 
     .nav-links{
