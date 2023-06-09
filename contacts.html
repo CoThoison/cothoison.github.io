@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="styles.css"/>
+	<title>Portfolio</title>
+</head>
+
+<body>
+
+	<!--Barre de navigation-->
+	<nav class="navbar">
+		<ul class="nav-links">
+			<li class="navbar_accueil">
+				<a href="index.html">Welcome</a>
+			</li>
+			<li class="navbar_etudes">
+				<a href="etudes.html">Studies</a>
+			</li>
+			<li class="navbar_experiences">
+				<a href="experiences.html">Experiences</a>
+			</li>
+			<li  class="navbar_projets">
+				<a href="projets.html">Projects</a>
+			</li>
+			<li class="navbar_contacts current">
+				<a href="contacts.html">Contacts</a>
+			</li>
+		</ul>
+		<img src="img/menu-btn.png" alt="menu hamburger" class="menuHamburger"/>
+	</nav>
+
+	<script>
+		const menuHamburger = document.querySelector(".menuHamburger")
+		const navLinks = document.querySelector(".nav-links")
+ 
+		menuHamburger.addEventListener('click',()=>{
+		navLinks.classList.toggle('mobile-menu')
+		})
+	</script>
+
+</body>
+
+</html>
