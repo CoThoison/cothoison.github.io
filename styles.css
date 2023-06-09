@@ -106,7 +106,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: -200%;
+        margin-left: -200%;
     }
 
     .nav-links{
@@ -114,7 +114,7 @@ body{
     }
 
     .nav-links.mobile-menu{
-        margin-right: 0;
+        margin-left: 0;
     
     }
 
