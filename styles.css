@@ -1,9 +1,12 @@
-/*Definition des polices d'écritudes*/
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+*, ::before, ::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/*Definition des polices d'écritudes*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav, h1{
@@ -14,11 +17,13 @@ body{
 .navbar{
     display: flex;
     justify-content: center;
+    margin-bottom: 10vh;
+    padding-top: 1.5vh;
 }
 
 .navbar ul{
     list-style-type: none;
-    margin: 0.25vh 0.25sw;
+    margin: 0.25vh 0.25vw;
     padding: 0;
 }
 
@@ -46,7 +51,6 @@ body{
     text-decoration: none;
     color: white;
     text-align: center;
-    padding: 0.5vw 1.5vw;
 }
 
 .background .navbar ul li a:hover{
@@ -87,12 +91,13 @@ body{
 }
 
 /*Affichage téléphone*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1500px){
 
     .navbar ul{
         list-style-type: none;
         margin: 0;
         padding: 0;
+        z-index: 1;
     }
 
     .navbar ul{
@@ -127,3 +132,177 @@ body{
     }
 
 }
+
+/*Timeline*/
+.timelineBox{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    padding: 80px 0 250px 0;
+    margin-bottom: 100px;
+}
+
+/*Création de la ligne*/
+
+.line{
+    height: 680px;
+    width: 4px;
+    margin: 0 auto;
+    background-color: rgba(192, 192, 192, 0.5);
+}
+
+/*Parametres des ronds*/
+
+.roundTL{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.roundTL1{
+    top: 60px;
+    background-color: #BAE6A2;
+    border: 1px solid #BAE6A2;
+}
+
+.roundTLColor1{
+    top: 65px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.roundTL2{
+    top: 400px;
+    background-color: #DBF5AE;
+    border: 1px solid #DBF5AE;
+}
+
+.roundTLColor2{
+    top: 405px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.roundTL3{
+    top: 740px;
+    background-color: #ACE8D0;
+    border: 1px solid #ACE8D0;
+}
+
+.roundTLColor3{
+    top: 745px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+/*Paramètres des box*/
+
+.boxTL{
+    color: rgb(192, 192, 192);
+    width: 400px;
+    min-height: 200px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    height: auto;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.boxTL p{
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+}
+
+.boxTL1{
+    top: 80px;
+    left: calc(50% - 270px);
+}
+
+.boxTL2{
+    top: 420px;
+    left: calc(50% + 270px);
+}
+
+.boxTL3{
+    top: 760px;
+    left: calc(50% - 270px);
+}
+
+.boxTL h2{
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+.boxTL a{
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+    font-weight: bold;
+}
+
+.boxTL a:hover{
+    text-decoration: underline;
+}
+
+.boxTL1 h2{
+    background-color: #BAE6A2;
+}
+
+.boxTL2 h2{
+    background-color: #DBF5AE;
+}
+
+.boxTL3 h2{
+    background-color: #ACE8D0;
+}
+
+.boxTL .buttonTL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.boxTL2 .buttonTL2{    
+    background-color: #DBF5AE;
+}
+
+.boxTL3 .buttonTL3{    
+    background-color: #ACE8D0;
+}
+
+/*Affichage Timeline telephone*/
+
+@media screen and (max-width: 1000px) {
+    .line {
+      margin-left: auto;
+      margin-right: 0px;
+    }
+
+    .roundTL{
+        left: calc(100% - 2px);
+        transform: translate(-50%);
+    }
+
+    .boxTL{
+            left: 50%;
+            transform: translate(-50%);
+            width: 80vw;
+    }
+
+  }
+  
