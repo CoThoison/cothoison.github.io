@@ -2,15 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-style: none;
 }
 
 /*Definition des polices d'écritudes*/
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
-.nav, h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.navbar a, h1, h2{
+    font-family: Georgia, serif;
 }
 
 /*Mise en place de la barre de navigation*/
@@ -305,5 +307,76 @@ body{
             width: 80vw;
     }
 
-  }
-  
+}
+
+.titleEXP{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.experiencesBox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+}
+
+.boxEXP{
+    color: rgb(192, 192, 192);
+    text-align: center;
+    width: 400px;
+    min-height: 200px;
+    height: auto;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.boxEXP:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.boxEXP h2{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.boxEXP p{
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+}
+
+.boxEXP1 h2{
+    background-color:#AFA1C4;
+}
+
+.boxEXP2 h2{
+    background-color:#D4B4CD;
+}
+
+.boxEXP3 h2{
+    background-color:#A4A8BF;
+}
+
+@media screen and (max-width: 1500px){
+    .experiencesBox{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxEXP{        
+        width: 80vw;
+    }
+}
+
+/*PROJECT PAGE*/
+
+.boxProjects1 h2{
+    background-color:#97E5D7;
+}
