@@ -43,6 +43,53 @@ nav ul a li{
     border-bottom: solid 1px black;
 }
 
+nav .menuHamburger{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    display: none;
+    z-index: 1;
+}
+
+nav .mobile-menu{
+    left: 0;
+}
+
+/*Affichage téléphone*/
+@media screen and (max-width: 1500px){
+
+    nav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    nav .menuHamburger{
+        display: block;
+    }
+
+    nav ul a{
+        margin: 1.5vh 0;
+    }
+
+}
+
 /*Front page*/
 .front-page{
     width: 100vw;
@@ -93,6 +140,7 @@ nav ul a li{
     height: 1100px;
     margin-top: 10vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 .studies-page .line{
@@ -259,6 +307,7 @@ nav ul a li{
 .projects-page{
     width: 100vw;
     margin-top: 10vh;
+    overflow-x: hidden;
 }
 
 .projects-page .projects-boxes{
@@ -317,6 +366,7 @@ nav ul a li{
 .experiences-page{
     width: 100vw;
     margin-top: 10vh;
+    overflow-x: hidden;
 }
 
 .experiences-page .experiences-boxes{
@@ -388,6 +438,7 @@ nav ul a li{
 .contacts-page{
     margin-top: 50px;
     background-color: #BBB;
+    overflow-x: hidden;
 }
 
 .contacts-page .image-container{
@@ -401,4 +452,15 @@ nav ul a li{
     width: 31.5px;
     height: 31.5px;
     margin: 0 20px;
+}
+
+@media screen and (max-width: 1500px){
+    .experiences-page .experiences-boxes .experiences-box{
+        width: 300px;
+    }
+
+    .projects-page .projects-boxes .projects-box{
+        width: 300px;
+    }
+
 }
