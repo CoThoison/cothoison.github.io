@@ -1,161 +1,109 @@
-*, ::before, ::after{
-    padding: 0;
+/*General style*/
+
+*, *::after, *::before{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-style: none;
-}
-
-/*Definition des polices d'écritudes*/
-body{
-    font-family: Verdana, sans-serif;
-}
-
-.navbar a, h1, h2{
-    font-family: Georgia, serif;
-}
-
-/*Mise en place de la barre de navigation*/
-.navbar{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10vh;
-    padding-top: 1.5vh;
-}
-
-.navbar ul{
     list-style-type: none;
-    margin: 0.25vh 0.25vw;
-    padding: 0;
 }
 
-.navbar ul li{
-    display: inline;
+body{
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden;
 }
 
-.navbar ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 4vh;
-    text-align: center;
-    padding: 0.5vh 1.5vw;
-}
-
-.navbar ul li a:hover{
-    border-bottom: solid 1.5px black;
-}
-
-.navbar ul li.current a{
-    border-bottom: solid 1.5px black;
-}
-/*Gestion des couleurs de la barre de navigation sur Accueil*/
-.background .navbar ul li a{
-    text-decoration: none;
-    color: white;
+h1, h2{
+    font-family: 'Abril Fatface', serif;
     text-align: center;
 }
 
-.background .navbar ul li a:hover{
-    border-bottom: solid 1.5px white;
+/*Navbar*/
+nav ul{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    right: 10px;
+    backdrop-filter: blur(1px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-.background .navbar ul li.current a{
-    border-bottom: solid 1.5px white;
+nav ul a:hover{
+    border-bottom: solid 1px black;
 }
 
-.menuHamburger{
+nav ul a li{
+    padding: 10px 20px;
     color: black;
 }
 
-/*Image de fond sur accueil*/
-.background{
-    height: 100vh;
+.current{
+    border-bottom: solid 1px black;
+}
+
+/*Front page*/
+.front-page{
     width: 100vw;
-    background-image: url("img/back.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 1.2;
-    color: white;
-}
-
-.presentation{
-    margin-top: 30vh;
-    margin-left: 10vw;
-}
-
-.navbar .menuHamburger{
-    position: absolute;
-    top: 2vh;
-    right: 2vw;
-    width: 7vw;
-    display: none;
-}
-
-/*Affichage téléphone*/
-@media screen and (max-width: 1500px){
-
-    .navbar ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        z-index: 1;
-    }
-
-    .navbar ul{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(7px);
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -200%;
-    }
-
-    .nav-links{
-        transition: all 0.5s ease;
-    }
-
-    .nav-links.mobile-menu{
-        margin-left: 0;
-    
-    }
-
-    .navbar .menuHamburger{
-        display: block;
-    }
-
-    .navbar ul li{
-        margin: 1.5vh 0;
-    }
-
-}
-
-/*Timeline*/
-.timelineBox{
-    width: 100%;
-    height: 1000px;
+    height: 100vh;
     position: relative;
-    padding: 80px 0 250px 0;
-    margin-bottom: 100px;
+    overflow: hidden;
 }
 
-/*Création de la ligne*/
+.front-page .circle{
+    position: absolute;
+    background-color: #7986CB;
+    border-radius: 50%;
+    z-index: -1;
+}
 
-.line{
-    height: 680px;
+.front-page .main-circle{
+    left: -50vh;
+    top:  -50vh;
+    width: 130vh;
+    height: 130vh;
+}
+
+.front-page .second-circle{
+    right: -30vh;
+    bottom: -30vh;
+    width: 80vh;
+    height: 80vh;
+}
+
+.front-page .presentation-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.front-page .presentation-text .hello-text{
+    font-size: 50px;
+}
+
+.front-page .presentation-text p{
+    font-size: 25px;
+}
+
+/*Studies page*/
+.studies-page{
+    width: 100vw;
+    height: 1100px;
+    margin-top: 10vh;
+    position: relative;
+}
+
+.studies-page .line{
+    height: 730px;
     width: 4px;
     margin: 0 auto;
+    margin-top: 60px;
     background-color: rgba(192, 192, 192, 0.5);
 }
 
-/*Parametres des ronds*/
-
-.roundTL{
+.studies-page .roundTL{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -164,51 +112,49 @@ body{
     transform: translate(-50%);
 }
 
-.roundTL1{
-    top: 60px;
+.studies-page .roundTL1{
+    top: 85px;
     background-color: #BAE6A2;
     border: 1px solid #BAE6A2;
 }
 
-.roundTLColor1{
-    top: 65px;
+.studies-page .roundTLColor1{
+    top: 90px;
     background-color: white;
     width: 30px;
     height: 30px;
     border: none;
 }
 
-.roundTL2{
-    top: 400px;
+.studies-page .roundTL2{
+    top: 450px;
     background-color: #DBF5AE;
     border: 1px solid #DBF5AE;
 }
 
-.roundTLColor2{
-    top: 405px;
+.studies-page .roundTLColor2{
+    top: 455px;
     background-color: white;
     width: 30px;
     height: 30px;
     border: none;
 }
 
-.roundTL3{
-    top: 740px;
+.studies-page .roundTL3{
+    top: 815px;
     background-color: #ACE8D0;
     border: 1px solid #ACE8D0;
 }
 
-.roundTLColor3{
-    top: 745px;
+.studies-page .roundTLColor3{
+    top: 820px;
     background-color: white;
     width: 30px;
     height: 30px;
     border: none;
 }
 
-/*Paramètres des box*/
-
-.boxTL{
+.studies-page .boxTL{
     color: rgb(192, 192, 192);
     width: 400px;
     min-height: 200px;
@@ -222,56 +168,56 @@ body{
     overflow: hidden;
 }
 
-.boxTL p{
+.studies-page .boxTL p{
     padding: 10px 10px 10px 10px;
     text-align: justify;
 }
 
-.boxTL1{
-    top: 80px;
+.studies-page .boxTL1{
+    top: 85px;
     left: calc(50% - 270px);
 }
 
-.boxTL2{
-    top: 420px;
+.studies-page .boxTL2{
+    top: 450px;
     left: calc(50% + 270px);
 }
 
-.boxTL3{
-    top: 760px;
+.studies-page .boxTL3{
+    top: 815px;
     left: calc(50% - 270px);
 }
 
-.boxTL h2{
+.studies-page .boxTL h2{
     margin: 0;
     padding: 10px 0;
     text-align: center;
     color: white;
 }
 
-.boxTL a{
+.studies-page .boxTL a{
     text-decoration: none;
     color: rgb(192, 192, 192);
     font-weight: bold;
 }
 
-.boxTL a:hover{
+.studies-page .boxTL a:hover{
     text-decoration: underline;
 }
 
-.boxTL1 h2{
+.studies-page .boxTL1 h2{
     background-color: #BAE6A2;
 }
 
-.boxTL2 h2{
+.studies-page .boxTL2 h2{
     background-color: #DBF5AE;
 }
 
-.boxTL3 h2{
+.studies-page .boxTL3 h2{
     background-color: #ACE8D0;
 }
 
-.boxTL .buttonTL{
+.studies-page .boxTL .buttonTL{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,28 +226,28 @@ body{
     color: white;
 }
 
-.boxTL2 .buttonTL2{    
+.studies-page .boxTL2 .buttonTL2{    
     background-color: #DBF5AE;
 }
 
-.boxTL3 .buttonTL3{    
+.studies-page .boxTL3 .buttonTL3{    
     background-color: #ACE8D0;
 }
 
 /*Affichage Timeline telephone*/
 
 @media screen and (max-width: 1000px) {
-    .line {
+    .studies-page .line {
       margin-left: auto;
       margin-right: 0px;
     }
 
-    .roundTL{
+    .studies-page .roundTL{
         left: calc(100% - 2px);
         transform: translate(-50%);
     }
 
-    .boxTL{
+    .studies-page .boxTL{
             left: 50%;
             transform: translate(-50%);
             width: 80vw;
@@ -309,20 +255,26 @@ body{
 
 }
 
-.titleEXP{
-    text-align: center;
-    margin-bottom: 50px;
+/*Projects page*/
+.projects-page{
+    width: 100vw;
+    margin-top: 10vh;
 }
 
-.experiencesBox{
+.projects-page .projects-boxes{
+    color: rgb(192, 192, 192);
+    margin-top: 10vh;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: auto;
 }
 
-.boxEXP{
-    color: rgb(192, 192, 192);
+.projects-page .projects-boxes h2{
+    padding: 10px 0;
+}
+
+.projects-page .projects-boxes .projects-box{
     text-align: center;
     width: 400px;
     min-height: 200px;
@@ -332,51 +284,121 @@ body{
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     margin-bottom: 40px;
     overflow: hidden;
-    transition: transform 0.3s ease;
 }
 
-.boxEXP:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.boxEXP h2{
-    text-align: center;
+.projects-page .projects-boxes .projects-box1 h2{
+    background-color: #957DAD;
     color: white;
-    margin: 0;
+}
+
+.projects-page .projects-boxes .projects-box p{
+    padding: 10px;
+}
+
+.projects-page .projects-boxes .image-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+}
+
+.projects-page .projects-boxes .image-container img{
+    width: 31.5px;
+    height: 31.5px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+.projects-page .projects-boxes .image-container .CSS3{
+    width: 22.34px;
+    height: 31.5px;
+}
+
+.experiences-page{
+    width: 100vw;
+    margin-top: 10vh;
+}
+
+.experiences-page .experiences-boxes{
+    color: rgb(192, 192, 192);
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+    flex-shrink: 0;
+    align-items: flex-start;
+}
+
+.experiences-page .experiences-boxes h2{
     padding: 10px 0;
 }
 
-.boxEXP p{
-    padding: 10px 10px 10px 10px;
-    text-align: justify;
+.experiences-page .experiences-boxes .experiences-box{
+    text-align: center;
+    width: 400px;
+    min-height: 200px;
+    height: auto;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    overflow: hidden;
 }
 
-.boxEXP1 h2{
-    background-color:#AFA1C4;
+.experiences-page .experiences-boxes .experiences-box1 h2{
+    background-color: #FADCA8;
+    color: black;
 }
 
-.boxEXP2 h2{
-    background-color:#D4B4CD;
+.experiences-page .experiences-boxes a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    color: white;
 }
 
-.boxEXP3 h2{
-    background-color:#A4A8BF;
+.experiences-page .experiences-boxes a:hover{
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 1500px){
-    .experiencesBox{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .boxEXP{        
-        width: 80vw;
-    }
+.experiences-page .experiences-boxes .experiences-box1 a{
+    background-color: #FADCA8;
 }
 
-/*PROJECT PAGE*/
+.experiences-page .experiences-boxes .experiences-box2 h2{
+    background-color: #F8CEAB;
+    color: black;
+}
 
-.boxProjects1 h2{
-    background-color:#97E5D7;
+.experiences-page .experiences-boxes .experiences-box2 a{
+    background-color: #F8CEAB;
+}
+
+.experiences-page .experiences-boxes .experiences-box p{
+    padding: 10px;
+}
+
+.experiences-page .subsection{
+    margin: 20px 0;
+}
+
+.contacts-page{
+    margin-top: 50px;
+    background-color: #BBB;
+}
+
+.contacts-page .image-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.contacts-page .image-container img{
+    width: 31.5px;
+    height: 31.5px;
+    margin: 0 20px;
 }
