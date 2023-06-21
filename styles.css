@@ -340,6 +340,24 @@ nav .mobile-menu{
     color: white;
 }
 
+.projects-page .projects-boxes .projects-box2 h2{
+    background-color: #D291BC;
+    color: white;
+}
+
+.projects-page .projects-boxes .buttonProjects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.projects-page .projects-boxes .buttonProjects2{
+    background-color: #D291BC;
+}
+
 .projects-page .projects-boxes .projects-box p{
     padding: 10px;
 }
