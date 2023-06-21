@@ -317,6 +317,7 @@ nav .mobile-menu{
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: auto;
+    align-items: flex-start;
 }
 
 .projects-page .projects-boxes h2{
