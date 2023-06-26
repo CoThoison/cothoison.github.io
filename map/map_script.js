@@ -1,9 +1,40 @@
+const menuHamburger = document.querySelector(".menuHamburger");
+const navLinks = document.querySelector("nav .menu");
+const divMap = document.querySelector("#map");
+ 
+menuHamburger.addEventListener('click',()=>{
+	navLinks.classList.toggle('menuOpen');
+})
+
+divMap.addEventListener('click',()=>{
+  if(navLinks.classList.contains("menuOpen")){
+    navLinks.classList.remove("menuOpen");
+  }
+});
+
 const map = L.map('map', { maxZoom: 18 }).setView([46.603354, 1.888334], 6);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+const world = document.querySelector("#World");
+const france = document.querySelector("#France");
+const japan = document.querySelector("#Japan");
+
+
+world.addEventListener('click',()=>{
+  map.setView([30, 30], 2.3);
+});
+
+france.addEventListener('click',()=>{
+  map.setView([46.603354, 1.888334], 6);
+});
+
+japan.addEventListener('click',()=>{
+  map.setView([37.204824, 138.252924], 5);
+});
 
 const markerCluster = L.markerClusterGroup();
 
