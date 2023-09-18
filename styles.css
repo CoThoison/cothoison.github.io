@@ -1,4 +1,4 @@
-/*General style*/
+/*GENERAL STYLE*/
 
 *, *::after, *::before{
     margin: 0;
@@ -19,7 +19,7 @@ h1, h2{
     text-align: center;
 }
 
-/*Navbar*/
+/*NAVBAR*/
 nav ul{
     display: flex;
     position: fixed;
@@ -89,7 +89,7 @@ nav .mobile-menu{
 
 }
 
-/*Front page*/
+/*FRONT PAGE*/
 .front-page{
     width: 100vw;
     height: 100vh;
@@ -133,7 +133,7 @@ nav .mobile-menu{
     font-size: 25px;
 }
 
-/*Studies page*/
+/*STUDIES PAGE*/
 .studies-page{
     width: 100vw;
     height: 1100px;
@@ -165,6 +165,18 @@ nav .mobile-menu{
     border: 1px solid #BAE6A2;
 }
 
+.studies-page .roundTL2{
+    top: 450px;
+    background-color: #DBF5AE;
+    border: 1px solid #DBF5AE;
+}
+
+.studies-page .roundTL3{
+    top: 815px;
+    background-color: #ACE8D0;
+    border: 1px solid #ACE8D0;
+}
+
 .studies-page .roundTLColor1{
     top: 90px;
     background-color: white;
@@ -173,24 +185,12 @@ nav .mobile-menu{
     border: none;
 }
 
-.studies-page .roundTL2{
-    top: 450px;
-    background-color: #DBF5AE;
-    border: 1px solid #DBF5AE;
-}
-
 .studies-page .roundTLColor2{
     top: 455px;
     background-color: white;
     width: 30px;
     height: 30px;
     border: none;
-}
-
-.studies-page .roundTL3{
-    top: 815px;
-    background-color: #ACE8D0;
-    border: 1px solid #ACE8D0;
 }
 
 .studies-page .roundTLColor3{
@@ -302,7 +302,7 @@ nav .mobile-menu{
 
 }
 
-/*Projects page*/
+/*PROJECTS PAGE*/
 .projects-page{
     width: 100vw;
     margin-top: 10vh;
@@ -341,11 +341,6 @@ nav .mobile-menu{
     color: white;
 }
 
-.projects-page .projects-boxes .projects-box2 h2{
-    background-color: #D291BC;
-    color: white;
-}
-
 .projects-page .projects-boxes .buttonProjects{
     display: flex;
     justify-content: center;
@@ -353,10 +348,6 @@ nav .mobile-menu{
     margin: 10px;
     padding: 5px;
     color: white;
-}
-
-.projects-page .projects-boxes .buttonProjects2{
-    background-color: #D291BC;
 }
 
 .projects-page .projects-boxes .projects-box p{
@@ -381,6 +372,8 @@ nav .mobile-menu{
     width: 22.34px;
     height: 31.5px;
 }
+
+/*EXPERIENCE PAGE*/
 
 .experiences-page{
     width: 100vw;
@@ -415,11 +408,6 @@ nav .mobile-menu{
     overflow: hidden;
 }
 
-.experiences-page .experiences-boxes .experiences-box1 h2{
-    background-color: #FADCA8;
-    color: black;
-}
-
 .experiences-page .experiences-boxes a{
     display: flex;
     justify-content: center;
@@ -433,30 +421,46 @@ nav .mobile-menu{
     text-decoration: underline;
 }
 
-.experiences-page .experiences-boxes .experiences-box1 a{
+.experiences-page .experiences-boxes .experiences-box p{
+    padding: 10px;
+}
+
+.experiences-page .experiences-boxes .experiences-box11 h2{
+    background-color: #FADCA8;
+    color: black;
+}
+
+.experiences-page .experiences-boxes .experiences-box11 a{
     background-color: #FADCA8;
 }
 
-.experiences-page .experiences-boxes .experiences-box2 h2{
+.experiences-page .experiences-boxes .experiences-box12 h2{
     background-color: #F8CEAB;
     color: black;
 }
 
-.experiences-page .experiences-boxes .experiences-box2 a{
+.experiences-page .experiences-boxes .experiences-box12 a{
     background-color: #F8CEAB;
 }
 
-.experiences-page .experiences-boxes .experiences-box p{
-    padding: 10px;
+.experiences-page .experiences-boxes .experiences-box21 h2{
+    background-color: #F8CEAB;
+    color: black;
+}
+
+.experiences-page .experiences-boxes .experiences-box21 a{
+    background-color: #F8CEAB;
 }
 
 .experiences-page .subsection{
     margin: 20px 0;
 }
 
+/*CONTACT PAGE*/
+
 .contacts-page{
     margin-top: 50px;
-    background-color: #BBB;
+    background-color: #7987cb4b;
     overflow-x: hidden;
 }
 
@@ -481,4 +485,58 @@ nav .mobile-menu{
     .projects-page .projects-boxes .projects-box{
         width: 300px;
     }
+}
+
+/*SIDE PAGE*/
+
+.side-page .rect{
+    height: 100px;
+    width: 730px;
+    margin-top: 100px;
+}
+
+.side-page .side-page-title{  
+    position: fixed;
+    top: 112.5px;  
+    font-size: 50px;
+    margin-left: 365px;
+    transform: translate(-50%, 0);
+}
+
+.side-page .round{
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 730px;
+    top: 100px;
+    transform: translate(-50%, 0);
+}
+
+/*JAPAN PAGE*/
+
+#japan-page .rect{
+    background-color: rgba(241, 145, 195);
+}
+
+#japan-page .round{
+    background-color: rgba(241, 145, 195);
+}
+
+/*CDL PAGE*/
+#cdl-page .rect{
+    background-color: rgba(241, 145, 195);
+}
+
+#cdl-page .round{
+    background-color: rgba(241, 145, 195);
+}
+
+/*WOMEN7 PAGE*/
+#women7-page .rect{
+    background-color: rgba(241, 145, 195);
+}
+
+#women7-page .round{
+    background-color: rgba(241, 145, 195);
 }
