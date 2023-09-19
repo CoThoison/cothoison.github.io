@@ -513,6 +513,14 @@ nav .mobile-menu{
     transform: translate(-50%, 0);
 }
 
+.description{
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    top: 300px;
+    text-align: justify;
+}
+
 /*JAPAN PAGE*/
 
 #japan-page .rect{
