@@ -136,7 +136,7 @@ nav .mobile-menu{
 /*STUDIES PAGE*/
 .studies-page{
     width: 100vw;
-    height: 1100px;
+    height: 1200px;
     margin-top: 10vh;
     position: relative;
     overflow-x: hidden;
@@ -286,11 +286,11 @@ nav .mobile-menu{
 @media screen and (max-width: 1000px) {
     .studies-page .line {
       margin-left: auto;
-      margin-right: 0px;
+      margin-right: 10px;
     }
 
     .studies-page .roundTL{
-        left: calc(100% - 2px);
+        left: calc(100% - 12px);
         transform: translate(-50%);
     }
 
@@ -305,7 +305,7 @@ nav .mobile-menu{
 /*PROJECTS PAGE*/
 .projects-page{
     width: 100vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     overflow-x: hidden;
 }
 
