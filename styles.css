@@ -389,7 +389,6 @@ nav .mobile-menu{
     flex-wrap: wrap;
     margin-bottom: auto;
     flex-shrink: 0;
-    align-items: flex-start;
 }
 
 .experiences-page .experiences-boxes h2{
@@ -397,6 +396,9 @@ nav .mobile-menu{
 }
 
 .experiences-page .experiences-boxes .experiences-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     width: 400px;
     min-height: 200px;
@@ -408,7 +410,7 @@ nav .mobile-menu{
     overflow: hidden;
 }
 
-.experiences-page .experiences-boxes a{
+.experiences-page .experiences-boxes a {
     display: flex;
     justify-content: center;
     align-items: center;
