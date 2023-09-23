@@ -493,14 +493,16 @@ nav .mobile-menu{
     height: 100px;
     width: 730px;
     margin-top: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .side-page .side-page-title{  
-    position: fixed;
-    top: 112.5px;  
+    position: relative;  
     font-size: 50px;
-    margin-left: 365px;
-    transform: translate(-50%, 0);
+    margin-left: 10px;
 }
 
 .side-page .round{
@@ -511,14 +513,46 @@ nav .mobile-menu{
     left: 730px;
     top: 100px;
     transform: translate(-50%, 0);
+    z-index: -999;
 }
 
 .description{
-    position: absolute;
+    position: relative;
     left: 100px;
     right: 100px;
-    top: 300px;
+    margin-top: 100px;
     text-align: justify;
+}
+
+/*Responsive SIDE PAGE*/
+@media screen and (max-width: 1500px){
+    /*The rectangle takes all the width*/
+    .side-page .rect{
+        width: 100vw;
+    }
+
+    .side-page .round{
+        visibility: hidden;
+    }
+
+}
+
+@media screen and (max-width: 875px){
+    /*The font size of the title deacrease*/
+    .side-page .side-page-title{
+        font-size: 5.5vw;
+    }
+
+    .side-page .rect{
+        height: 11vw;
+    }
+
+    .description{
+        font-size: 2vw;
+        margin-top: 10vw;
+        left: 5vw;
+        right: 5vw;
+    }
 }
 
 /*JAPAN PAGE*/
