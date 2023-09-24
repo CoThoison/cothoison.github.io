@@ -133,6 +133,43 @@ nav .mobile-menu{
     font-size: 25px;
 }
 
+.front-page img{
+    position: absolute;
+    height: 40px;
+    transform: translate(-3px,0);
+}
+
+.front-page .English_resume{
+    z-index: 999;
+}
+
+.front-page .French_resume{
+    z-index: 999;
+}
+
+.front-page .roundPDF{
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+    border: 3.5px solid black;
+    top: 80vh;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-page .roundPDFEnglish{
+    transform: translate(-150%, 0);
+}
+
+.front-page .roundPDFFrench{
+    transform: translate(50%, 0);
+}
+
 /*STUDIES PAGE*/
 .studies-page{
     width: 100vw;
