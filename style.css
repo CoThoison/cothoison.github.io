@@ -5,6 +5,7 @@
     text-decoration: none;
     font-style: none;
     list-style-type: none;
+    font-weight: normal;
 }
 
 body {
@@ -200,10 +201,10 @@ body {
 @media only screen and (max-width: 1250px) {
 
     #study_page .part{
-        left: 50vw;
-        transform: translate(-50vw, 0);
         margin-left: 0px;
         max-width: 100%;
+        left: 5vw;
+        right: 5vw;
     }
 
     #study_page .rectangle_left {
@@ -225,4 +226,69 @@ body {
         max-width: calc(100% - 36px - 150px);
     }
 
+}
+
+#experiences_page {
+    height: auto;
+}
+
+#experiences_page .flex_container{
+    margin-left: 10vw;
+    margin-right: 20vw;
+    position: relative;
+    padding-top: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+#experiences_page .flex_container div {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+}
+
+#experiences_page .flex_container div h2:hover + p,
+#experiences_page .flex_container div p:hover{
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#experiences_page .flex_container div p{
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+}
+
+#contacts_page .flex_icon {
+    margin-left: 10vw;
+    margin-right: 20vw;
+    position: relative;
+    padding-top: 400px;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contacts_page .flex_icon a div{
+    display: flex;
+    align-items: center;
+    color: rgb(50, 50, 50);
+    transition: transform 0.5s ease-in-out;
+}
+
+#contacts_page .flex_icon a div:hover{
+    transform: translateX(20px);
+}
+
+#contacts_page .flex_icon a div img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
 }
