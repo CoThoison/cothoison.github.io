@@ -1,0 +1,242 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-style: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: rgb(50, 50, 50);
+    overflow-x: hidden;
+    text-justify: auto;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.page h1 {
+    color: rgba(175, 175, 175, 0.1);
+    position: absolute;
+    font-size: 13vw;
+    font-family: 'Abril Fatface', serif;
+    top: 30vh;
+    left: 5vw;
+    transform: translate(0, -50%);
+}
+
+#welcome_page p {
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+    transform: translate(0, -50%);
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #welcome_page p {
+        font-size: 4vw;
+    }
+
+}
+
+/*GENERAL STUDY_PAGE*/
+
+#study_page {
+    height: 300vh;
+}
+
+#study_page .part{
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+#study_page .part .cercle {
+    position: absolute;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+}
+
+#study_page .part .rectangle {
+    width: 36px;
+    min-width: 36px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    top: 18px;
+}
+
+#study_page .part .paragraphe {
+    position: relative;
+    max-width: 500px;
+}
+
+#study_page .part .date {
+    text-align: center;
+    position: relative;
+    font-family: 'Abril Fatface', serif;
+    font-size: 30px;
+    border-bottom: 2px solid rgba(175, 175, 175, 0.5);
+}
+
+#study_page .part .paragraphe p{
+    position: relative;
+    margin-top: 30px;
+}
+
+#study_page .rectangle_right {
+    left: 0;
+    transform: translate(calc(-50% + 18px), 0);
+}
+
+#study_page .rectangle_left {
+    left: 50vw;
+    transform: translate(calc(-50% - 18px), 0);
+}
+
+#study_page .paragraphe_left{
+    left: 50vw;
+    transform: translate(calc(-50% - 18px - 300px - 50px), 0);
+    width: auto;
+}
+
+#study_page .paragraphe_right{
+    left: 50px;
+}
+
+#study_page .cercle_bottom {
+    bottom: -36px;
+}
+
+#study_page .part_right {
+    margin-left: calc(50vw - 18px);
+}
+
+#study_page .part_left {
+    left: 18px;
+}
+
+#study_page .cercle_left {
+    left: 50vw;
+    transform: translate(calc(-50% - 18px), 0);
+}
+
+/*CASES STUDY_PAGE*/
+
+#study_page .part1{
+    top: 50vh;
+}
+
+#study_page .cercle1 {
+    background-color: hsl(0, 100%, 80%);
+}
+
+#study_page .cercle12 {
+    background-color: hsl(30, 100%, 80%);
+}
+
+#study_page .rectangle1 {
+    background: linear-gradient(to bottom, hsl(0, 100%, 80%), hsl(30, 100%, 80%));
+}
+
+#study_page .part2{
+    top: calc(50vh + 45px);
+}
+
+#study_page .cercle2 {
+    background-color: hsl(30, 100%, 80%);
+}
+
+#study_page .cercle22 {
+    background-color: hsl(60, 100%, 80%);
+}
+
+#study_page .rectangle2 {
+    background: linear-gradient(to bottom, hsl(30, 100%, 80%), hsl(60, 100%, 80%));
+}
+
+#study_page .part3{
+    top: calc(50vh + 90px);
+}
+
+#study_page .cercle3 {
+    background-color: hsl(60, 100%, 80%);
+}
+
+#study_page .cercle32 {
+    background-color: hsl(90, 100%, 80%);
+}
+
+#study_page .rectangle3 {
+    background: linear-gradient(to bottom, hsl(60, 100%, 80%), hsl(90, 100%, 80%));
+}
+
+#study_page .part4{
+    top: calc(50vh + 135px);
+}
+
+#study_page .cercle4 {
+    background-color: hsl(90, 100%, 80%);
+}
+
+#study_page .cercle42 {
+    background-color: hsl(120, 100%, 80%);
+}
+
+#study_page .rectangle4 {
+    background: linear-gradient(to bottom, hsl(90, 100%, 80%), hsl(120, 100%, 80%));
+}
+
+#study_page .part5{
+    top: calc(50vh + 180px);
+}
+
+#study_page .cercle5 {
+    background-color: hsl(120, 100%, 80%);
+}
+
+#study_page .cercle52 {
+    background-color: hsl(150, 100%, 80%);
+}
+
+#study_page .rectangle5 {
+    background: linear-gradient(to bottom, hsl(120, 100%, 80%), hsl(150, 100%, 80%));
+}
+
+@media only screen and (max-width: 1250px) {
+
+    #study_page .part{
+        left: 0;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    #study_page .rectangle_left {
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    #study_page .cercle_left {
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    #study_page .paragraphe_left {
+        left: 50px;
+        transform: translate(0, 0);
+    }
+
+    #study_page .part .paragraphe {
+        max-width: calc(100% - 36px - 150px);
+    }
+
+}
