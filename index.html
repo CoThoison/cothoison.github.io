@@ -1,147 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
 </head>
 <body>
-
-<nav>
-    <ul>
-        <a href="#front-page"><li>Home</li></a>
-        <a href="#studies-page"><li>Studies</li></a>        
-        <a href="#projects-page"><li>Projects</li></a>
-        <a href="#experiences-page"><li>Experiences</li></a>
-    </ul>
-    <img src="img/hamburger-menu-black.png" alt="menu hamburger" class="menuHamburger"/>
-</nav>
-
-<div class="front-page" id="front-page">
-
-    <div class="circle main-circle"></div>
-    <div class="circle second-circle"></div>
-
-    <div class="presentation-text">
-        <p>
-            <span class="hello-text">
-                Hello ! <br>
-            </span> 
-            I am Corentin THOISON <br>
-            I am a computer sciences student at ENSEEIHT in Toulouse
-        </p>
-    </div>
-    
-    <div class="roundPDF roundPDFEnglish">
-        <img class="English_resume" src="img/pdf.png" alt="English resume" title="English resume"/>
-    </div>
-    <div class="roundPDF roundPDFFrench">
-        <img class="French_resume" src="img/pdf.png" alt="French resume" title="French resume"/>
+    <div id="welcome_page" class="page">
+        <h1>Welcome</h1>
+        <p>I am Corentin THOISON<br/>
+        I am a computer sciences student at ENSEEIHT in Toulouse<br/>
+        I am specialised in software</p>
     </div>
 
-</div>
+    <div id="study_page" class="page">
+        <h1>My studies</h1>
+        <div class="part part_right part1">
+            <div class="cercle cercle1"></div>
+            <div class="rectangle rectangle_right rectangle1"></div>
+            <div class="cercle cercle_bottom cercle1 cercle12"></div>
+            <div class="paragraphe paragraphe_right">
+                <div class="date date1">2015</div>
+                <p>I spent many years on Minecraft. This game is very malleable. Thanks to "plugins" Minecraft can be changed, 
+                    you can add, delete and modify aspects of the game. This is only possible with JAVA code (because Minecraft is programmed in JAVA). 
+                    It is how I dive into the world of computer sciences.
+                </p>
+            </div>
+        </div>
 
-<div class="studies-page" id="studies-page">
-    <h1>My studies</h1>
-    <div class="line"></div>
-    <div class="roundTL roundTL1"></div>
-	<div class="roundTL roundTL2"></div>
-	<div class="roundTL roundTL3"></div>
+        <div class="part part_left part2">
+            <div class="cercle cercle_left cercle2"></div>
+            <div class="rectangle rectangle_left rectangle2"></div>
+            <div class="cercle cercle_left cercle_bottom cercle2 cercle22"></div>
+            <div class="paragraphe paragraphe_left">
+                <div class="date date2">2017</div>
+                <p>I didn't choose the highschool were I was supposed to go but an highschool in Versailles. Jules FERRY highschool had the 
+                    "European section" in English (section européenne en anglais) and the speciality in engineering sciences 
+                    (sciences de l'ingénieur) more than the nearest highschool (where I was supposed to go). </p>
+            </div>
+        </div>
 
-	<div class="roundTL roundTLColor1"></div>
-	<div class="roundTL roundTLColor2"></div>
-	<div class="roundTL roundTLColor3"></div>
 
-	<div class="boxTL boxTL1">
-		<h2>2020</h2>
-		<p>
-			I got my baccalaureat certificate over 3 years in the high school Jules Ferry in Versailles.<br>
-			I got it with the specialisation in engineering sciences and with the European section in English.
-		</p>
-	</div>
-	<div class="boxTL boxTL2">
-		<h2>2022</h2>
-		<p>
-			After 2 years of preparatory class, I joined ENSEEIHT in Toulouse to work in the field of informatics. <br>
-			It is at ENSEEIHT where I joined the association of Photo7 and I was involved in my first work as a volunteer 
-			at the event of "<a href="https://capitoledulibre.org/" target="_blank">Capiole du Libre</a>".
-		</p>
-		<a href="#volunteer-section" class="buttonTL buttonTL2">Civic Engagement</a>
-	</div>
-	<div class="boxTL boxTL3">
-		<h2>2023</h2>
-		<p>
-			For my second work as a photographer for Photo7 I was a volunteer at the event of "Women7".<br>
-			During the summer holidays, I went to Japan for a language stage and an internship.
-		</p>
-		<a href="japan.html" target="_blank" class="buttonTL buttonTL3">Japan Travel</a>
-	</div>
-</div>
+        <div class="part part_right part3">
+            <div class="cercle cercle3"></div>
+            <div class="rectangle rectangle_right rectangle3"></div>
+            <div class="cercle cercle_bottom cercle3 cercle32"></div>
+            <div class="paragraphe paragraphe_right">
+                <div class="date date3">2019</div>
+                <p>Thanks to the European section, I had the opportunity to go few days in England. 
+                    I was with friends in a foster familly. The day the class gathered and we visited cities 
+                    (Chester, London, Manchester, Liverpool and Canterbury) and museums (Beatles museam, Merseyside maritime museum, ...)</p>
+            </div>
+        </div>
 
-<div class="projects-page" id="projects-page">
-    <h1>My projects</h1>
-    <div class="projects-boxes">
-        <div class="projects-box projects-box1">
-            <h2>Eportfolio</h2>
-            <p>
-                This portfolio is my first big project to be published online ! 
-                I coded it by myself and I hope to learn more about web development to improve this portfolio !
-            </p>
-            <div class="image-container">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/langfr-195px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" title="HTML5">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/langfr-195px-CSS3_logo_and_wordmark.svg.png" alt="CSS3" class="CSS3" title="CSS3">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/197px-Unofficial_JavaScript_logo_2.svg.png" alt="Javascript" title="Javascript">
+        <div class="part part_left part4">
+            <div class="cercle cercle_left cercle4"></div>
+            <div class="rectangle rectangle_left rectangle4"></div>
+            <div class="cercle cercle_left cercle_bottom cercle4 cercle42"></div>
+            <div class="paragraphe paragraphe_left">
+                <div class="date date4">2020</div>
+                <p>I got my baccalaureat certificate over 3 years in the high school Jules Ferry in Versailles.
+                    I got it with the specialisation in engineering sciences and with the European section in English.</p>
+            </div>
+        </div>
+
+        <div class="part part_right part5">
+            <div class="cercle cercle5"></div>
+            <div class="rectangle rectangle_right rectangle5"></div>
+            <div class="cercle cercle_bottom cercle5 cercle52"></div>
+            <div class="paragraphe paragraphe_right">
+                <div class="date date5">2022</div>
+                <p>After 2 years of preparatory class, I joined ENSEEIHT in Toulouse to work in the field of informatics.
+                    It is at ENSEEIHT where I joined the association of Photo7 and I was involved in my first work as a volunteer at the event of "Capiole du Libre".</p>
             </div>
         </div>
 
     </div>
-</div>
 
-<div class="experiences-page" id="experiences-page">
-    <h1>My experiences</h1>
-    <h2 id="volunteer-section" class="subsection">My work as a volunteer</h2>
-    <div class="experiences-boxes">
-        <div class="experiences-box experiences-box11">
-            <h2>Capitole du Libre</h2>
-            <p>The event of Capitole du Libre is dedicated to free software. It gathers around 100 speakers and 25 workshops are set up for experts and begginers.</p>
-            <a href="capitole_du_libre.html" target="_blank">Learn more</a>
-        </div>
-        <div class="experiences-box experiences-box12">
-            <h2>Women7</h2>
-            <p>The event of Women7 gather around 200 schoolgirls to present to them the job of engineer.<br>
-				This event is based on sharing with students and companies, activities and the visit of the Cité de l'Espace (Space City) in Toulouse.</p>
-            <a href="women7.html" target="_blank">Learn more</a>
-        </div>
+    <div id="experiences_page" class="page">
+        <h1>Experiences</h1>
     </div>
-    <h2 class="subsection">My professional experiences</h2>
-    <div class="experiences-boxes">
-        <div class="experiences-box experiences-box21">
-            <h2>Worker Internship</h2>
-            <p>
-                Thanks to my Japanese teacher who put us in contact with Intercultural Society for the Arts I went to Japan for 7 weeks.
-                The travel was composed of 3 weeks of language stage and 4 weeks of internship in a hotel.
-            </p>
-            <a href="japan.html" target="_blank">Learn more</a>
-        </div>
-    </div>
-</div>
 
-<div class="contacts-page">
-    <div class="image-container">
-        <a href="https://www.linkedin.com/in/corentint/" target="_blank">
-            <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw=w240-h480-rw" alt="logo LinkedIn">
-        </a>
-        <a href="https://github.com/CoThoison" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/146px-Git_icon.svg.png?20220905010122" alt="logo Git">
-        </a>
-        <a href="mailto:cothoison@gmail.com" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="logo Gmail">
-        </a>
-    </div>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
