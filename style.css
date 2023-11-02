@@ -215,9 +215,10 @@ body {
 @media only screen and (max-width: 1250px) {
 
     #study_page .part{
-        left: 0;
+        left: 50vw;
+        transform: translate(-50vw, 0);
         margin-left: 0px;
-        width: 100%;
+        max-width: 100%;
     }
 
     #study_page .rectangle_left {
