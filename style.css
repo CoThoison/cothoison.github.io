@@ -198,6 +198,18 @@ body {
     background: linear-gradient(to bottom, hsl(120, 100%, 80%), hsl(150, 100%, 80%));
 }
 
+#study_page .cercle6 {
+    background-color: hsl(150, 100%, 80%);
+}
+
+#study_page .cercle62 {
+    background-color: hsl(180, 100%, 80%);
+}
+
+#study_page .rectangle6 {
+    background: linear-gradient(to bottom, hsl(150, 100%, 80%), hsl(180, 100%, 80%));
+}
+
 @media only screen and (max-width: 1250px) {
 
     #study_page .part{
@@ -267,7 +279,6 @@ body {
 
 #contacts_page .flex_icon {
     margin-left: 10vw;
-    margin-right: 20vw;
     position: relative;
     padding-top: 400px;
     display: flex;
@@ -276,10 +287,15 @@ body {
     flex-direction: column;
 }
 
-#contacts_page .flex_icon a div{
-    display: flex;
+#contacts_page .flex_icon a{
+    max-width: 40vw;
     align-items: center;
     color: rgb(50, 50, 50);
+}
+
+#contacts_page .flex_icon a div{
+    align-items: center;
+    display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
