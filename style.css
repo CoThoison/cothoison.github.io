@@ -210,6 +210,43 @@ body {
     background: linear-gradient(to bottom, hsl(150, 100%, 80%), hsl(180, 100%, 80%));
 }
 
+#study_page .ppp_cercle1 {
+    position: absolute;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    top: calc(100% - 36px);
+    left: 50vw;
+    transform: translate(calc(-18px + 150px), 0);
+    background-color: hsl(180, 100%, 80%);
+}
+
+#study_page .ppp_cercle2 {
+    position: absolute;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    top: calc(100% - 36px);
+    left: 50vw;
+    transform: translate(calc(-18px - 150px), 0);
+    background-color: hsl(180, 100%, 80%);
+}
+
+#study_page .ppp_rectangle {
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 36px;
+    left: 50vw;
+    transform: translate(calc(-50%), 0);
+    background-color: hsl(180, 100%, 80%);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none;
+    color: black;
+}
+
 @media only screen and (max-width: 1250px) {
 
     #study_page .part{
